@@ -46,7 +46,10 @@ src: ./pages/secoder.md
 hide: false
 ---
 
+---
+layout: center
+---
+
 # Thanks!
 
-## Questions?
-
+### Questions?

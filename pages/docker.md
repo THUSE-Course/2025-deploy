@@ -54,7 +54,7 @@ Docker 镜像的构建：Dockerfile
 
 容器的启动：
 
-- （本地）docker run -itd -p 10001:8000 --name &lt;Container Name&gt; &lt;Image&gt;
+- （本地）docker run -d -p 10001:8000 --name &lt;Container Name&gt; &lt;Image&gt;
 - （其他部署工具）查阅对应文档...
 
 ---
