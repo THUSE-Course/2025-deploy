@@ -10,7 +10,7 @@
 
 ### Docker
 
-Docker 将应用及其所需要的环境打包并交付给其他人使用，使得应用能够在一致的环境下一键运行，而不需要手动配置环境
+Docker 将应用及其所需要的环境打包并交付给其他人使用, 使得应用能够在一致的环境下一键运行, 而不需要手动配置环境
 
 ### 特点
 
@@ -28,7 +28,7 @@ Docker 镜像是一个特殊的文件系统
 
 - 提供容器运行时所需的程序、库、资源、配置等文件
 - 包含一些为运行时准备的一些配置参数
-- 不包含任何动态数据，其内容在构建之后也不会被改变
+- 不包含任何动态数据, 其内容在构建之后也不会被改变
 
 ---
 
@@ -38,7 +38,11 @@ Docker 镜像是一个特殊的文件系统
 
 Docker 镜像的构建：Dockerfile
 
+<div style="width: 60%; margin: auto;">
+
 ![dockerfile-example](/assets/dockerfile-example.png)
+
+</div>
 
 - 语法规范详见：[https://yeasy.gitbook.io/docker_practice/image/dockerfile](https://yeasy.gitbook.io/docker_practice/image/dockerfile)
 - 之后使用 docker build 命令构建镜像
@@ -49,7 +53,7 @@ Docker 镜像的构建：Dockerfile
 
 ### 容器（Container）
 
-- 镜像的**实例**：镜像是静态的定义，容器是镜像运行时的实体
+- 镜像的**实例**：镜像是静态的定义, 容器是镜像运行时的实体
 - 具有**易失性**：任何保存于容器存储层的信息都会随容器删除而丢失（大作业需要将用户数据保存在持久化存储中）
 
 容器的启动：
@@ -64,8 +68,8 @@ Docker 镜像的构建：Dockerfile
 ### Registry
 
 概念辨析：仓库（Repository）、注册服务器（Registry）
-- 镜像构建完成后，可以很容易的在当前宿主机上运行，但是，如果需要在其它服务器上使用这个镜像，我们就需要一个集中的存储、分发镜像的服务，Docker Registry 就是这样的服务。
-- 一个 Docker Registry 中可以包含多个仓库（Repository）；每个仓库可以包含多个标签（Tag）；每个标签对应一个镜像。
+- 镜像构建完成后, 可以很容易的在当前宿主机上运行, 但是, 如果需要在其它服务器上使用这个镜像, 我们就需要一个集中的存储、分发镜像的服务, Docker Registry 就是这样的服务. 
+- 一个 Docker Registry 中可以包含多个仓库（Repository）；每个仓库可以包含多个标签（Tag）；每个标签对应一个镜像. 
 
 ---
 
@@ -73,7 +77,12 @@ Docker 镜像的构建：Dockerfile
 
 ### Registry
 
+<div style="width: 70%; margin: auto;">
+
 ![dockerhub](/assets/dockerhub.png)
+
+</div>
+
 概念辨析：Docker Hub; 图中的 python;  python:3.9.16
 
 ---

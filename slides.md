@@ -41,10 +41,10 @@ src: ./pages/cicd.md
 hide: false
 ---
 
----
+<!-- ---
 src: ./pages/secoder.md
 hide: false
----
+--- -->
 
 ---
 layout: center
